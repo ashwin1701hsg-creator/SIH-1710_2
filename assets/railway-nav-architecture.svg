@@ -1,0 +1,83 @@
+<svg width="1200" height="720" viewBox="0 0 1200 720" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Railway station navigation system architecture diagram">
+  <defs>
+    <style>
+      .bg { fill: #f8fafc; }
+      .title { font: 700 28px 'Segoe UI', Arial, sans-serif; fill: #0f172a; }
+      .label { font: 600 18px 'Segoe UI', Arial, sans-serif; fill: #0f172a; }
+      .small { font: 500 14px 'Segoe UI', Arial, sans-serif; fill: #334155; }
+      .box { fill: #e0f2fe; stroke: #0284c7; stroke-width: 2; rx: 18; }
+      .box2 { fill: #dcfce7; stroke: #16a34a; stroke-width: 2; rx: 18; }
+      .box3 { fill: #ede9fe; stroke: #7c3aed; stroke-width: 2; rx: 18; }
+      .box4 { fill: #fef3c7; stroke: #d97706; stroke-width: 2; rx: 18; }
+      .box5 { fill: #fee2e2; stroke: #dc2626; stroke-width: 2; rx: 18; }
+      .arrow { stroke: #475569; stroke-width: 3; fill: none; marker-end: url(#arrowhead); }
+      .dbox { fill: #f1f5f9; stroke: #64748b; stroke-width: 2; rx: 16; }
+    </style>
+    <marker id="arrowhead" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0,0 L12,6 L0,12 z" fill="#475569"/>
+    </marker>
+  </defs>
+
+  <rect x="0" y="0" width="1200" height="720" class="bg"/>
+  <text x="600" y="48" text-anchor="middle" class="title">Railway Station Navigation System Architecture</text>
+
+  <rect x="60" y="120" width="180" height="110" class="box"/>
+  <text x="150" y="165" text-anchor="middle" class="label">Passengers</text>
+  <text x="150" y="190" text-anchor="middle" class="small">Mobile app / Web</text>
+  <text x="150" y="212" text-anchor="middle" class="small">Voice + accessibility</text>
+
+  <rect x="330" y="120" width="200" height="110" class="box2"/>
+  <text x="430" y="165" text-anchor="middle" class="label">Navigation App</text>
+  <text x="430" y="190" text-anchor="middle" class="small">3D map, route planner</text>
+  <text x="430" y="212" text-anchor="middle" class="small">real-time directions</text>
+
+  <rect x="610" y="120" width="220" height="110" class="box3"/>
+  <text x="720" y="165" text-anchor="middle" class="label">API Gateway</text>
+  <text x="720" y="190" text-anchor="middle" class="small">Auth, routing, kiosk APIs</text>
+  <text x="720" y="212" text-anchor="middle" class="small">Geo services</text>
+
+  <rect x="910" y="120" width="220" height="110" class="box4"/>
+  <text x="1020" y="165" text-anchor="middle" class="label">Core Services</text>
+  <text x="1020" y="190" text-anchor="middle" class="small">Pathfinding, updates</text>
+  <text x="1020" y="212" text-anchor="middle" class="small">accessibility engine</text>
+
+  <rect x="410" y="320" width="220" height="130" class="dbox"/>
+  <text x="520" y="360" text-anchor="middle" class="label">Station Maps DB</text>
+  <text x="520" y="388" text-anchor="middle" class="small">Layouts, POIs</text>
+  <text x="520" y="410" text-anchor="middle" class="small">platform/facility data</text>
+
+  <rect x="700" y="320" width="220" height="130" class="dbox"/>
+  <text x="810" y="360" text-anchor="middle" class="label">Real-time Data</text>
+  <text x="810" y="388" text-anchor="middle" class="small">Crowd density</text>
+  <text x="810" y="410" text-anchor="middle" class="small">train schedules</text>
+
+  <rect x="230" y="520" width="250" height="130" class="box5"/>
+  <text x="355" y="565" text-anchor="middle" class="label">Digital Kiosks</text>
+  <text x="355" y="592" text-anchor="middle" class="small">Touch-based route finder</text>
+  <text x="355" y="614" text-anchor="middle" class="small">inside station</text>
+
+  <rect x="560" y="520" width="260" height="130" class="box5"/>
+  <text x="690" y="565" text-anchor="middle" class="label">Accessibility Tools</text>
+  <text x="690" y="592" text-anchor="middle" class="small">Voice guidance</text>
+  <text x="690" y="614" text-anchor="middle" class="small">wheelchair routes</text>
+
+  <rect x="890" y="520" width="260" height="130" class="box5"/>
+  <text x="1020" y="565" text-anchor="middle" class="label">Railway System</text>
+  <text x="1020" y="592" text-anchor="middle" class="small">IRCTC/rail services</text>
+  <text x="1020" y="614" text-anchor="middle" class="small">alerts &amp; station updates</text>
+
+  <path d="M240 175 L330 175" class="arrow"/>
+  <path d="M530 175 L610 175" class="arrow"/>
+  <path d="M830 175 L910 175" class="arrow"/>
+
+  <path d="M1020 230 L1020 310 L520 310 L520 320" class="arrow"/>
+  <path d="M520 250 L520 320" class="arrow"/>
+  <path d="M810 230 L810 320" class="arrow"/>
+
+  <path d="M360 450 L360 520" class="arrow"/>
+  <path d="M690 450 L690 520" class="arrow"/>
+  <path d="M1020 450 L1020 520" class="arrow"/>
+
+  <path d="M430 175 L430 260 L355 260" class="arrow"/>
+  <text x="430" y="250" text-anchor="middle" class="small">user requests</text>
+</svg>
